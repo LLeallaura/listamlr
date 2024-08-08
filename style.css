@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background: linear-gradient(
+    90deg,
+    rgb(77, 20, 77) 0%, 
+    rgb(139, 57, 135) 100%
+);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+   border: 2px solid #521342;
+   padding: 30px 48px;
+   width: 40%;
+   min-width: 500px;
+}
+.new-task-container{
+    background-color: #330630;
+    padding: 30px 28px;
+    border-radius: 5px;
+    box-shadow: 0 15px 30px rgb(255, 0, 191);
+    display: flex;
+}
+.new-task-container input{
+   flex: 3;
+   font-size: 1rem;
+   border: 2px solid #d1c3d4;
+   border-radius: 5px;
+   padding: 12px;
+   font-weight: 500;
+}
+
+.new-task-container input:focus{
+    outline: none;
+    border-color:#6e2b58;
+}
+
+.new-task-button button{
+  flex: 1;
+  border-radius: 5px;
+  font-weight: 500;
+  height: 100%;
+  font-size: 1rem;
+  border: none;
+  background-color: #5c2d6e;
+  color: #39013b;
+  padding: 12px;
+  margin-left: 12px;
+  cursor: pointer;
+}
+.tasks-container {
+    background-color: pink;
+    padding: 30px 20px;
+    margin-top: 60px;
+    border-radius: 10px;
+    box-shadow: 0 15px 30px rgb(90, 37, 79);
+    width: 100%;
+}
+
+/* Utilities */ 
+.error {
+    border: 2px solid #39013b !important;
+}
+
+.error::placeholder{
+   color: purple
+}
